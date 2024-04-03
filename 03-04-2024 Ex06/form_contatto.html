@@ -8,67 +8,68 @@
 </head>
 <body>
 	<table>
-		<tr>
-			<td>
-				<img src="https://wp.usatodaysports.com/wp-content/uploads/sites/90/2017/01/instachat.jpg" alt="Logo del Social" width="100%" />
-				<form>
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required/><br><br>
+		<td>
+			<img src="https://wp.usatodaysports.com/wp-content/uploads/sites/90/2017/01/instachat.jpg" alt="Logo del Social" width="100%" />
+			<form>
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required/><br><br>
 				
-					<label for="cognome">Cognome:</label>
-					<input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required/><br><br>
+				<label for="cognome">Cognome</label>
+				<input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required/><br><br>
 				
-					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="email" placeholder="Inserisci la tua e-mail" required /><br><br>
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" placeholder="Inserisci la tua e-mail" required /><br><br>
 
-					<hr>
+				<label id="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Inserisci una password" required /><br><br>
+					
+				<hr>
+			
+				<label for="anno">Seleziona il tuo anno di nascita</label><br><br>
+				<select id="anno" name="anno" required>
+					<option value="">Seleziona...</option>
+					<option value="1994">1994</option>
+					<option value="1995">1995</option>
+					<option value="1996">1996</option>
+					<option value="1997">1997</option>
+					<option value="1998">1998</option>
+					<option value="1999">1999</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+					<option value="2005">2005</option>
+					<option value="2006">2006</option>
+					<option value="2007">2007</option>
+					<option value="2008">2008</option>
+					<option value="2009">2009</option>
+					<option value="2010">2010</option>
+					<option value="2011">2011</option>
+					<option value="2012">2012</option>
+					<option value="Altri anni">Altri anni...</option>
+				</select><br><br>
+
+				<hr>
+
+				<p>Come ci hai conosciuto?</p><br>
+				<label for="Amici">Amici</label>
+				<input style="margin-right: 10px; margin-bottom: 10px;" type="radio" id="Amici" name="come_ci_hai_conosciuto" />
+				<label for="Internet">Internet</label>
+				<input type="radio" id="Internet" name="come_ci_hai_conosciuto" /><br>
+				<label for="Tv">Tv</label>
+				<input style="margin-right: 10px" type="radio" id="Tv" name="come_ci_hai_conosciuto" />
+				<label for="Altro">Altro</label>
+				<input type="radio" id="Altro" name="come_ci_hai_conosciuto" /><br><br>
+
+				<label for="text_altro">Se hai scelto "Altro", dicci come...</label><br><br>
+				<textarea id="text_altro" name="text_altro" rows="10" cols="20" placeholder="Altro..."></textarea><br><br>
 				
-					<label for="anno">Seleziona il tuo anno di nascita</label><br><br>
-					<select id="anno" name="anno" required>
-						<option value="">Seleziona...</option>
-						<option value="1994">1994</option>
-						<option value="1995">1995</option>
-						<option value="1996">1996</option>
-						<option value="1997">1997</option>
-						<option value="1998">1998</option>
-						<option value="1999">1999</option>
-						<option value="2000">2000</option>
-						<option value="2001">2001</option>
-						<option value="2002">2002</option>
-						<option value="2003">2003</option>
-						<option value="2004">2004</option>
-						<option value="2005">2005</option>
-						<option value="2006">2006</option>
-						<option value="2007">2007</option>
-						<option value="2008">2008</option>
-						<option value="2009">2009</option>
-						<option value="2010">2010</option>
-						<option value="2011">2011</option>
-						<option value="2012">2012</option>
-						<option value="Altri anni">Altri anni...</option>
-					</select><br><br>
-
-					<hr>
-
-					<label>Come ci hai conosciuto?</label><br><br>
-					<label for="Amici">Amici</label>
-					<input style="margin-right: 10px; margin-bottom: 10px;" type="radio" id="Amici" name="come_ci_hai_conosciuto">
-					<label for="Internet">Internet</label>
-					<input type="radio" id="Internet" name="come_ci_hai_conosciuto"><br>
-					<label for="Tv">Tv</label>
-					<input style="margin-right: 10px" type="radio" id="Tv" name="come_ci_hai_conosciuto">
-					<label for="Altro">Altro</label>
-					<input type="radio" id="Altro" name="come_ci_hai_conosciuto"><br><br>
-
-					<label id="altro">Se hai scelto "Altro", dicci come...</label><br><br>
-					<textarea id="altro" name="altro" rows="10" cols="20" placeholder="Altro..." required></textarea><br><br>
-				
-					<label for="Accedi"></label>
-					<input id="Accedi" type="submit" value="Accedi" />
-					<br>
-				</form>
-			</td>
-		</tr>
+				<label for="Invia"></label>
+				<input id="Invia" type="submit" value="Invia" />
+				<br><br>
+			</form>
+		</td>
 	</table>
 </body>
 </html>
