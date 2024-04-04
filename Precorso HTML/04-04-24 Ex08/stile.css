@@ -53,6 +53,11 @@ option[value] {
 	margin-left: auto;
 }
 
+.Facebook {
+	text-decoration: none;
+	color: #007bff;
+}
+
 @media (max-width: 768px) {
 
 	body {
@@ -108,5 +113,10 @@ option[value] {
 		resize: vertical;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.Facebook {
+		text-decoration: none;
+		color: #007bff;
 	}
 }
