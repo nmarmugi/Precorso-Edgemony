@@ -1,0 +1,112 @@
+body {
+	width: 100px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+label, input::placeholder, textarea::placeholder, p {
+	color: rgb(144, 138, 138);
+}
+
+input, textarea {
+	border: 2px solid rgb(223, 215, 215);
+}
+
+#text_altro, label[for="text_altro"] {
+	display: none;
+}
+
+#Altro:checked ~ #text_altro, #Altro:checked ~ label[for="text_altro"] {
+	display: block;
+}
+
+table {
+	margin-top: 50px;
+	border: 2px solid rgb(223, 215, 215);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+input[type="submit"], select {
+	background-color: #007bff;
+	color: rgb(250, 250, 250);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+hr {
+	border: 1px solid rgb(223, 215, 215);
+}
+
+option[value] {
+	background-color: white;
+	color: black;
+}
+
+#text_altro {
+	resize: vertical;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (max-width: 768px) {
+
+	body {
+		width: 100px;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+	
+	label, input::placeholder, textarea::placeholder, p {
+		color: rgb(144, 138, 138);
+	}
+	
+	input, textarea {
+		border: 2px solid rgb(223, 215, 215);
+	}
+	
+	#text_altro, label[for="text_altro"] {
+		display: none;
+	}
+	
+	#Altro:checked ~ #text_altro, #Altro:checked ~ label[for="text_altro"] {
+		display: block;
+	}
+	
+	table {
+		margin-top: 50px;
+		border: 2px solid rgb(223, 215, 215);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	
+	input[type="submit"], select {
+		background-color: #007bff;
+		color: rgb(250, 250, 250);
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	hr {
+		border: 1px solid rgb(223, 215, 215);
+	}
+	
+	option[value] {
+		background-color: white;
+		color: black;
+	}
+	
+	#text_altro {
+		resize: vertical;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
