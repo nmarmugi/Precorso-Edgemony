@@ -1,0 +1,23 @@
+h1 {
+	color: red;
+}
+
+p {
+	color: green;
+}
+
+a {
+	color: blue;
+}
+
+.title {
+	color: pink;
+}
+
+#title {
+	color: yellow;
+}
+
+/* il title sarà quindi giallo per un fatto di priorità maggiore dell'ID,
+mentre paragrafo e link, rispettivamente verde e blu, perchè non c'è niente
+che vada ad intaccare la loro priorità*/

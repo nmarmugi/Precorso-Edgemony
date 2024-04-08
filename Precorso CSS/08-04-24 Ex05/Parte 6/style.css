@@ -1,0 +1,11 @@
+input {
+	text-transform: uppercase;
+}
+
+.BUTTON {
+	text-transform: lowercase;
+}
+
+.BUTTON:hover {
+	text-transform: capitalize;
+}

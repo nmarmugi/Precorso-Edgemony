@@ -1,0 +1,7 @@
+input {
+	font-weight: normal;
+}
+
+.BUTTON:hover {
+	font-weight: bold;
+}

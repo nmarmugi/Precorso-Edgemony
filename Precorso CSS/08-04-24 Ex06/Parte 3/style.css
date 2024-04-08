@@ -1,0 +1,11 @@
+div {
+	max-width: 400px;
+	width: 100%;
+	margin-top: 20px;
+	margin-left: 40px;
+	background-color: blue;
+}
+
+div {
+	margin: 0 auto;
+}

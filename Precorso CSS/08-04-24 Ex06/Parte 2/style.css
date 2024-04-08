@@ -1,0 +1,8 @@
+ul {
+	box-sizing: border-box;
+	width: 400px;
+	height: 200px;
+	margin: 0;
+	padding: 10px;
+	border: 5px solid green;
+}

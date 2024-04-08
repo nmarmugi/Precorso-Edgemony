@@ -1,0 +1,11 @@
+input {
+	color: gray;
+}
+
+.BUTTON {
+	color: white;
+}
+
+input[type="password"] {
+	background-color: blue;
+}
