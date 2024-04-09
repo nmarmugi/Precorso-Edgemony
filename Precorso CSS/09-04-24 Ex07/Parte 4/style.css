@@ -1,0 +1,12 @@
+.container-box {
+	height: 2000px;
+}
+
+.sticky-box {
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	position: sticky;
+	margin-top: 100px;
+	top: 0;
+}

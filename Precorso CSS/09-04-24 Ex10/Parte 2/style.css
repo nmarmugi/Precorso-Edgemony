@@ -1,0 +1,7 @@
+.dispari::before {
+	content: "Dispari";
+}
+
+.pari::before {
+	content: "Pari";
+}

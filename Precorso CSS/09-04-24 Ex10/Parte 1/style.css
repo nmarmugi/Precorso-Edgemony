@@ -1,0 +1,14 @@
+h1::first-letter, p::first-letter {
+	color: red;
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+a::first-letter {
+	color: red;
+	font-size: 50px;
+}

@@ -1,0 +1,8 @@
+span {
+	color: blue;
+}
+
+span::after {
+	content: " mi chiamo Nicola";
+	color: red;
+}

@@ -1,0 +1,12 @@
+.first {
+	background-color: red;
+}
+
+.second {
+	background-color: green;
+	visibility: hidden;
+}
+
+.third {
+	background-color: blue;
+}

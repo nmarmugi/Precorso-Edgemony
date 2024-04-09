@@ -1,0 +1,10 @@
+.container-img {
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	transition: transform 1s;
+}
+
+.container-img:hover {
+	transform: scale(2);
+}

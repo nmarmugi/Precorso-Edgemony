@@ -1,0 +1,14 @@
+.first {
+	background-color: red;
+	opacity: 0.1;
+}
+
+.second {
+	background-color: green;
+	opacity: 0.4;
+}
+
+.third {
+	background-color: blue;
+	opacity: 1;
+}

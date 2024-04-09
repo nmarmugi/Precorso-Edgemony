@@ -1,0 +1,11 @@
+.transition {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	transition-property: background-color;
+	transition-duration: 3s;
+}
+
+.transition:hover {
+	background-color: blue;
+}

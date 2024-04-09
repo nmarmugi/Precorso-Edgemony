@@ -1,0 +1,9 @@
+img {
+	width: 600px;
+	transition-property: width;
+	transition-duration: 3s;
+}
+
+img:hover {
+	width: 300px;
+}

@@ -1,0 +1,9 @@
+.text {
+	position: absolute;
+	top: 35px;
+	transition: transform 1s;
+}
+
+.text:hover {
+	transform: rotate(45deg);
+}
