@@ -1,0 +1,22 @@
+.first {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+.second {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.third {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}

@@ -1,0 +1,29 @@
+.first {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+
+.second {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.third {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+.fourth {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
