@@ -95,6 +95,14 @@
 		height: 170px;
 		width: 170px;
 	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.navbar {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 539px) {
