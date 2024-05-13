@@ -1,0 +1,7 @@
+@import url(./css/reset.css);
+@import url(./css/keyframe.css);
+@import url(./css/hero.css);
+
+body {
+	font-family: "Chivo Mono", monospace;
+}
