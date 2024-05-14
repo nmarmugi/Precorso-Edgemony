@@ -12,7 +12,7 @@ console.log(userPrompt.toLowerCase());
 
 let lottery = prompt("Inserire un valore da 1 a 10\nper provare a vincere alla lotteria");
 
-if(Number.isInteger(lottery) == false && Number(lottery) <= 10 && Number(lottery) >= 0) {
+if(Number.isInteger(lottery) == false && Number(lottery) <= 10 && Number(lottery) >= 1) {
 	if(Number(lottery) > 7) {
 		console.log('HAI VINTO!');
 	}
