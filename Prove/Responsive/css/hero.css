@@ -104,3 +104,12 @@ a:hover {
 		padding: 0;
 	}
 }
+
+@media (max-width: 414px) {
+	.container-content-hero {
+		padding-top: 10px;
+	}
+	.container-img-hero img {
+		animation: none;
+	}
+}
