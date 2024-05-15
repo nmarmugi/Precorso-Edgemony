@@ -2,6 +2,7 @@
 @import url(./css/keyframe.css);
 @import url(./css/hero.css);
 @import url(./css/second_element.css);
+@import url(./css/third_element.css);
 
 body {
 	font-family: "Chivo Mono", monospace;
