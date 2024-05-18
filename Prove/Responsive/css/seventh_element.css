@@ -68,7 +68,7 @@
     left: 50%;
 	opacity: 0;
 	transform: translate(-50%, -36px);
-	background-color: white;
+	background-color: yellow;
 	transition: transform 0.35s ease;
 }
 
