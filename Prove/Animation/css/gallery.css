@@ -20,13 +20,35 @@
 }
 
 .container-img-gallery {
-	margin-bottom: 20px;
+	margin-bottom: 35px;
+	position: relative;
+	transition: transform 0.35s ease-out;
 }
 
 .card-gallery a {
 	text-decoration: none;
 	color: var(--white);
 	text-decoration: underline var(--yellow);
+}
+
+.container-img-gallery::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--cover-black);
+	opacity: 0;
+	transition: opacity 0.35s ease-out;
+}
+
+.container-img-gallery:hover::before {
+	opacity: 1;
+}
+
+.container-img-gallery:hover {
+	transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1024px) {
