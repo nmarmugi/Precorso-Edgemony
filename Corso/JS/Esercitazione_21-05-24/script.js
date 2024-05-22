@@ -31,7 +31,7 @@ capitalize('CIAO');
 function min(a, b) {
 	if (typeof a !== 'number' || typeof b !== 'number') {
 		console.log('Non hai inserito un numero');
-		return;
+		return NaN;
 	}
 	if (a > b) {
 		console.log(b);
@@ -39,7 +39,7 @@ function min(a, b) {
 	}
 	else if (a === b) {
 		console.log('I numeri sono uguali');
-		return;
+		return b;
 	}
 	else {
 		console.log(a);
@@ -58,7 +58,7 @@ min('ciao', 'ciao');
 function potenza(base, esponente) {
 	if (typeof base !== 'number' || typeof esponente !== 'number') {
 		console.log('Non hai inserito un numero');
-		return;
+		return NaN;
 	}
 	if (base === 0 && esponente === 0) {
 		console.log('Forma indeterminata');
@@ -95,7 +95,7 @@ potenza('ciao', 'ciao');
 function factorial(n) {
 	if (typeof n !== 'number') {
 		console.log('Non hai inserito un numero');
-		return;
+		return NaN;
 	}
 	if (n < 0) {
 		console.log('Non si calcola il fattoriale per un numero negativo');
