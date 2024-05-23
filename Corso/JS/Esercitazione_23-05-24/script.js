@@ -21,9 +21,5 @@ clickBtn.onclick = function() {
 }
 
 resetBtn.onclick = function() {
-	let clickBtnToNumber = Number(clickBtn.innerHTML);
-	if (isNaN(clickBtnToNumber)) {
-		return;
-	}
 	clickBtn.innerHTML = 'Click me!';
 }
