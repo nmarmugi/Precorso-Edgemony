@@ -1,6 +1,6 @@
 const cards = [
     {
-        name: 'Foresta nera',
+        name: 'Foresta Nera',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -19,10 +19,11 @@ const cards = [
                 price: '€ 2.00'
             }],
         image: "./img/img-first-card.png",
-        animation: 'fadeIn1'
+        animation: 'fadeIn1',
+        margin: 'ciao'
     },
     {
-        name: 'Foresta nera',
+        name: 'Pianura Verde',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -40,11 +41,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn2'
+        image: "./img/cup-card.png",
+        animation: 'fadeIn2',
+        margin: 'margin-top2-img'
     },
     {
-        name: 'Foresta nera',
+        name: 'Lavanda e Miele',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -62,11 +64,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn3'
+        image: "./img/icecream-cone1.png",
+        animation: 'fadeIn3',
+        margin: 'ciao'
     },
     {
-        name: 'Foresta nera',
+        name: 'Tiglio e Menta',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -84,11 +87,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn4'
+        image: "./img/icecream-cone2.png",
+        animation: 'fadeIn4',
+        margin: 'ciao'
     },
     {
-        name: 'Foresta nera',
+        name: 'Mirtillo e Pino',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -106,11 +110,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn5'
+        image: "./img/icecream5.png",
+        animation: 'fadeIn5',
+        margin: 'margin-top-img'
     },
     {
-        name: 'Foresta nera',
+        name: 'Fico e Nocciola',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -128,11 +133,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn6'
+        image: "./img/icecream6.png",
+        animation: 'fadeIn6',
+        margin: 'margin-top-img'
     },
     {
-        name: 'Foresta nera',
+        name: 'Lampone e Timo',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -150,11 +156,12 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn7'
+        image: "./img/icream7.png",
+        animation: 'fadeIn7',
+        margin: 'margin-top-img'
     },
     {
-        name: 'Foresta nera',
+        name: 'Ribes e Rosa Canina',
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
         offerte: [
             {
@@ -172,8 +179,9 @@ const cards = [
                 img: "./img/brioche.png",
                 price: '€ 2.00'
             }],
-        image: "./img/img-first-card.png",
-        animation: 'fadeIn8'
+        image: "./img/icecream8.png",
+        animation: 'fadeIn8',
+        margin: 'margin-top-img'
     }];
 
 export {

@@ -1,15 +1,3 @@
-/* const borderCard1ElGen = () => {
-    const container = document.createElement('div');
-    container.className = 'border-card1';
-    return container
-}
-
-const borderCard2ElGen = () => {
-    const container = document.createElement('div');
-    container.className = 'border-card2';
-    return container
-} */
-
 const cardElGen = (obj) => {
     const border1 = document.createElement('div');
     border1.className = 'border-card1';
@@ -19,12 +7,9 @@ const cardElGen = (obj) => {
     const border2 = document.createElement('div');
     border2.className = 'border-card2';
 
-
-
     /* crea main card */
     const container = document.createElement('div');
     container.className = 'card';
-
 
     const titleCard = document.createElement('h2');
     titleCard.className = 'card__name';
@@ -100,6 +85,7 @@ const cardElGen = (obj) => {
     const imageCard = document.createElement('img');
     imageCard.src = obj.image;
     imageCard.className = 'card__img';
+    imageCard.classList.add('margin-top', obj.margin);
     imageCard.width = 150;
     imageCard.alt = 'icona gelato';
 
@@ -110,57 +96,14 @@ const cardElGen = (obj) => {
 
     containerOffer.append(containerOfferCup, containerOfferCone, containerOfferBrioche);
 
-
-
     container.append(titleCard, paragrafCard, containerOffer, imageCard);
     border2.append(container);
     border1.append(border2);
     return border1;
-
 }
 
 export {
-    /* borderCard1ElGen,
-    borderCard2ElGen, */
     cardElGen
 }
 
 
-
-/* <!--CARD 1-->
-            <div class="border-card1 fadeIn1">
-                <div class="border-card2">
-
-                    <div class="card">
-                        <h2 class="card__name"><span>L</span>orem <span>I</span>psum</h2>
-                        <p class="card__paragraph">
-                            Lorem <strong>ipsum</strong> dolor sit amet,
-                            consectetur adipisicing <strong>elit</strong>.
-                            Pariatur explicabo molestias
-                            vel officia <strong>distinctio</strong> fugiat.
-                        </p>
-                        <div title="Metti nel carrello" class="container-price">
-                            <div class="price__littleCard">
-                                <h3 class="price__name">Cup</h3>
-                                <img class="price__img" src="./img/cup.png" alt="Immagine coppetta gelato" width="50px"
-                                    height="50px">
-                                <span class="price__price">2 &euro;</span>
-                            </div>
-                            <div class="price__littleCard">
-                                <h3 class="price__name">Cone</h3>
-                                <img class="price__img" src="./img/cone.png" alt="Immagine cono gelato" width="50px"
-                                    height="50px">
-                                <span class="price__price">3 &euro;</span>
-                            </div>
-                            <div class="price__littleCard">
-                                <h3 class="price__name">Brioche</h3>
-                                <img class="price__img" src="./img/brioche.png" alt="Immagine brioche gelato"
-                                    width="50px" height="50px">
-                                <span class="price__price">4 &euro;</span>
-                            </div>
-                        </div>
-                        <img class="card__img" src="./img/img-first-card.png" alt="Immagine gusto gelato" width="150">
-                    </div>
-                </div>
-            </div>
-            <!--CARD 1--> */
