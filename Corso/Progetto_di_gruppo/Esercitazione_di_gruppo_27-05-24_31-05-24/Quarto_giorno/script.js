@@ -90,23 +90,17 @@ const newCard = [{
 
 
 let i = 0;
-let y = 0;
+/* let y = 0; */
 
 
 const createList = () => {
 
-
     for (let i = 0; i < cards.length; i++) {
 
-
         const cardEl = cardElGen(cards[i]);
-
-
         mainSectionEl.append(cardEl);
 
     }
-
-
     return mainSectionEl;
 }
 
@@ -124,7 +118,12 @@ function openModal() {
 
 }
 
-buttonEl.addEventListener('click', function () {
+function getRandomInt(value) {
+    return Math.floor(Math.random() * value);
+}
+/* console.log(getRandomInt(newCard.length)); */
+
+/* buttonEl.addEventListener('click', function () {
 
     // Controlla se tutte le carte sono già state aggiunte
     if (y === newCard.length) {
@@ -141,14 +140,51 @@ buttonEl.addEventListener('click', function () {
 
         openModal();
 
-    } else {
-        // Genera il nuovo elemento carta usando `cardElGen` e lo inserisce nel DOM
-        const newCardGen = cardElGen(newCard[y]);
-        main.insertAdjacentElement('beforeend', newCardGen);
-        y++;// Incrementa `y` per passare alla prossima carta
+    } 
+}
+)
+ */
+
+let randomValue = 0;
+
+buttonEl.addEventListener('click', function () {
+    randomValue = getRandomInt(newCard.length);
+
+
+    const allEmpty = newCard.every(element => element === "");
+    if (allEmpty) {
+        console.log('Ho finito le carte da stampare');
+        return;
+    }
+
+
+    if (newCard[randomValue] === '') {
+        randomValue = getRandomInt(newCard.length);
+    }
+
+
+    if (newCard[randomValue] !== '') {
+        const isValid = cards.some(i => i.name.toLowerCase() === newCard[randomValue].name.toLowerCase());
+
+
+        if (isValid) {
+
+            console.log('La carta è già presente!');
+            openModal();
+
+        } else {
+            const newCardGen = cardElGen(newCard[randomValue]);
+            cards.push(newCard[randomValue]);
+            newCard.splice(randomValue, 1, '');
+
+            main.insertAdjacentElement('beforeend', newCardGen);
+
+        }
+
     }
 }
 )
+
 
 modal.addEventListener('click', function () {
 

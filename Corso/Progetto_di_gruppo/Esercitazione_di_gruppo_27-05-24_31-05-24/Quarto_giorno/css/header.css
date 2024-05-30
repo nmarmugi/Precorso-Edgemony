@@ -61,6 +61,9 @@ header button:hover {
 }
 
 #modal {
+	position: absolute;
+	top: 50px;
+	left: 150px;
 	max-width: 400px;
 	background-color: rgb(255, 255, 255);
 	border: 2px solid rgb(22, 22, 145);
@@ -124,9 +127,13 @@ header button:hover {
 	#modal p {
 		text-align: center;
 		padding: 0;
-		margin: 50px 20px 50px 20px;
+		margin: 30px 20px 10px 20px;
 		width: auto;
+
 	}
 
+	#modal {
+		top: 80px;
+	}
 
 }
