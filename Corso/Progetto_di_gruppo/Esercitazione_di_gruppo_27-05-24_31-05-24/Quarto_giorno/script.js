@@ -158,7 +158,7 @@ buttonEl.addEventListener('click', function () {
     }
 
 
-    if (newCard[randomValue] === '') {
+    while (newCard[randomValue] === '') {
         randomValue = getRandomInt(newCard.length);
     }
 
