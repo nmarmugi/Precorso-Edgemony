@@ -36,6 +36,7 @@ const modalElGen = () => {
     imageCloseBtnEl.title = "Close Me!";// Imposta il titolo dell'immagine
     // Crea un elemento paragrafo per il testo della modale
     const paragrafModalEl = document.createElement('p');
+    paragrafModalEl.className = 'messageModal';
     paragrafModalEl.textContent = 'Attenzione, la carta è già presente!';
     // Aggiunge l'immagine al pulsante di chiusura
     closeBtnEl.append(imageCloseBtnEl);

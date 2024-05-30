@@ -154,6 +154,9 @@ buttonEl.addEventListener('click', function () {
     const allEmpty = newCard.every(element => element === "");
     if (allEmpty) {
         console.log('Ho finito le carte da stampare');
+        const message = document.querySelector('.messageModal');
+        message.textContent = 'Ho finito le card da stampare!';
+        openModal();
         return;
     }
 
