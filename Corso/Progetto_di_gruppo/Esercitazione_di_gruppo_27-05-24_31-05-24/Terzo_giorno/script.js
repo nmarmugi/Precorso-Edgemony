@@ -90,6 +90,10 @@ const main = createList();
 
 // creiamo la funzione all'evento onclick 
 buttonEl.addEventListener('click', function () {
+    if (i === newCard.length) {
+        console.log('sono finite le carte');
+        return;// Esce dalla funzione se non ci sono più carte da aggiungere
+    }
 
     // In una nuova variabile salviamo l'oggetto trasformato in card all'indice in cui ci troviamo    
     const newCardGen = cardElGen(newCard[i]);
