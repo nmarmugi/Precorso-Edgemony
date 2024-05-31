@@ -28,7 +28,7 @@ headerEl.insertAdjacentElement('afterend', containerCheck);
 const mainSectionEl = document.querySelector('.container-card');
 mainSectionEl.append(backgroundElGen());
 
-const newCard = [{
+let newCard = [{
     name: 'Labello Blu',
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
     offerte: [
@@ -75,35 +75,12 @@ const newCard = [{
     animation: 'fadeIn10',
     margin: 'ciao',
     type: 'Celiaci'
-},
-{
-    name: 'Foresta Nera',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
-    offerte: [
-        {
-            nomeOfferta: 'Cup',
-            img: "./img/cup.png",
-            price: '€ 1.00'
-        },
-        {
-            nomeOfferta: 'Cone',
-            img: "./img/cone.png",
-            price: '€ 1.50'
-        },
-        {
-            nomeOfferta: 'Brioche',
-            img: "./img/brioche.png",
-            price: '€ 2.00'
-        }],
-    image: "./img/coppa-sorriso.png",
-    animation: 'fadeIn10',
-    margin: 'ciao',
-    type: 'Senza-lattosio'
 }]
 
 
 // Creiamo una copia di cards
 const arrayForReset = [].concat(cards);
+const arrayForResetNew = [].concat(newCard);
 
 let i = 0;
 
@@ -146,7 +123,9 @@ buttonEl.addEventListener('click', function () {
     if (allEmpty) {
         const message = document.querySelector('.messageModal');
         message.textContent = 'Ho finito le card da stampare!';
+        newCard = [];
         openModal();
+        console.log(newCard);
         return;
     }
 
@@ -236,6 +215,14 @@ removeButtonEl.addEventListener('click', function () {
 
 restoreButtonEl.addEventListener('click', function () {
 
+    if (newCard.length === 0) {
+        // Concatena le carte originali con quelle nel backup
+        const defaultList = newCard.concat(arrayForResetNew);
+        for (let i = 0; i < defaultList.length; i++) {
+            newCard.push(defaultList[i]);
+        }
+        console.log(arrayForResetNew, newCard);
+    }
     // Verifica se non ci sono carte attualmente 
     if (cards.length === 0) {
         // Concatena le carte originali con quelle nel backup
