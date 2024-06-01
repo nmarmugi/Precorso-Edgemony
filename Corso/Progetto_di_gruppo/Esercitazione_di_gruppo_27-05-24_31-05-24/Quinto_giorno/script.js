@@ -75,6 +75,30 @@ let newCard = [{
     animation: 'fadeIn10',
     margin: 'ciao',
     type: 'Celiaci'
+},
+{
+    name: 'Foresta Nera',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, maiores incidunt? Minus quisquam harum magnam.',
+    offerte: [
+        {
+            nomeOfferta: 'Cup',
+            img: "./img/cup.png",
+            price: '€ 1.00'
+        },
+        {
+            nomeOfferta: 'Cone',
+            img: "./img/cone.png",
+            price: '€ 1.50'
+        },
+        {
+            nomeOfferta: 'Brioche',
+            img: "./img/brioche.png",
+            price: '€ 2.00'
+        }],
+    image: "./img/coppa-sorriso.png",
+    animation: 'fadeIn10',
+    margin: 'ciao',
+    type: 'Celiaci'
 }]
 
 
@@ -215,26 +239,33 @@ removeButtonEl.addEventListener('click', function () {
 
 restoreButtonEl.addEventListener('click', function () {
 
-    if (newCard.length === 0) {
+    if (newCard.length >= 0) {
         // Concatena le carte originali con quelle nel backup
+        document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+            checkbox.checked = false;
+        })
+        newCard = [];
         const defaultList = newCard.concat(arrayForResetNew);
         for (let i = 0; i < defaultList.length; i++) {
             newCard.push(defaultList[i]);
         }
-        console.log(arrayForResetNew, newCard);
     }
     // Verifica se non ci sono carte attualmente 
-    if (cards.length === 0) {
+    if (cards.length >= 0) {
+        console.log(cards, cards.length);
         // Concatena le carte originali con quelle nel backup
+        document.querySelectorAll('input[type="checkbox"]').forEach(function(checkbox) {
+            checkbox.checked = false;
+        })
+        cards.length = 0;
+        console.log(cards);
         const defaultList = cards.concat(arrayForReset);
         // Pulisce il contenuto principale e aggiunge lo sfondo
         main.innerHTML = '';
         main.append(backgroundElGen());
-
         for (let i = 0; i < defaultList.length; i++) {
             cards.push(defaultList[i]);
         }
-
         // Ricostruisce il DOM con le carte ripristinate
         for (let i = 0; i < cards.length; i++) {
 
