@@ -30,3 +30,5 @@ prevButton.onclick = function() {
 		document.body.querySelector('#prevButton').style.transform = "scale(1)";
 	}, 350);
 }
+
+//Fine js

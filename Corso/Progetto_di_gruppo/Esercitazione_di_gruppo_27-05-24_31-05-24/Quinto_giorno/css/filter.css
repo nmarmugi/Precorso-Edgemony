@@ -1,7 +1,7 @@
 .filter-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
     background-color: #2d46b9;
     color: #f6b6bf;
@@ -23,7 +23,13 @@ label {
 }
 
 @media only screen and (min-width: 1024px) {
-	label {
+	.filter-container {
+      
+        justify-content: center;
+       
+    }
+    
+    label {
         color: white;
         margin-left: 10px;
     }
